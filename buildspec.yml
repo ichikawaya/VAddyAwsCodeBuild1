@@ -12,7 +12,7 @@ phases:
       - go build hello.go
   post_build:
     commands:
-      - git clone git@github.com:vaddy/go-vaddy.git
+      - git clone https://github.com/vaddy/go-vaddy.git
       - cd ./go-vaddy/bin/
       - chmod 700 vaddy-linux-64bit
       - ./vaddy-linux-64bit
