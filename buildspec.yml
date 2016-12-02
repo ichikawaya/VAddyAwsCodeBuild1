@@ -12,8 +12,5 @@ phases:
       - go build hello.go
   post_build:
     commands:
-      - git clone https://github.com/vaddy/go-vaddy.git
-      - cd ./go-vaddy/bin/
-      - chmod 700 vaddy-linux-64bit
-      - ./vaddy-linux-64bit
+      - git clone https://github.com/vaddy/go-vaddy.git govaddy ; govaddy/bin/vaddy-linux-64bit 
       - echo Build completed on `date`
