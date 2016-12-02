@@ -4,12 +4,12 @@ phases:
   install:
     commands:
       - echo Nothing to do in the install phase...
-    pre_build:
-      commands:
-        - echo Nothing to do in the pre_build phase...
-    build:
-      commands:
-        - go build hello.go
-    post_build:
-      commands:
-        - echo Build completed on `date`
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - go build hello.go
+  post_build:
+    commands:
+      - echo Build completed on `date`
