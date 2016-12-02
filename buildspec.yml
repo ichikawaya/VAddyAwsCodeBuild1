@@ -12,4 +12,7 @@ phases:
       - go build hello.go
   post_build:
     commands:
+      - wget https://github.com/vaddy/go-vaddy/blob/master/bin/vaddy-linux-64bit
+      - chmod 700 vaddy-linux-64bit
+      - ./vaddy-linux-64bit
       - echo Build completed on `date`
