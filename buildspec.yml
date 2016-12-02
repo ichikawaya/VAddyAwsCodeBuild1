@@ -9,7 +9,7 @@ phases:
         - echo Nothing to do in the pre_build phase...
     build:
       commands:
-        - echo Nothing to do in the pre_build phase...
+        - go build hello.go
     post_build:
       commands:
         - echo Build completed on `date`
